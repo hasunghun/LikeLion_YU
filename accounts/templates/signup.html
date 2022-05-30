@@ -1,21 +1,24 @@
 {% extends 'home.html' %}
 
 {% block home %}
-<div class="center">
+<div class="center" style="margin-left: 90px">
     <h1>Signup</h1>
     <form method="post" action="{% url 'signup' %}">
         {% csrf_token %}
         <div class="text_filed">
+            <h4 style="color: #FFFFFF; margin-top: 50px;" >username : </h4>
             <input name = "username">
             <span></span>
             <label>Email</label>
         </div>
         <div class="text_filed">
+            <h4 style="color: #FFFFFF;">Password : </h4>
             <input name = "password1" type="password" >
             <span></span>
             <label>Password</label>
         </div>
         <div class="text_filed">
+            <h4 style="color: #FFFFFF;">Password-RE : </h4>
             <input name = "password2" type="password" >
             <span></span>
             <label>Password-RE</label>
